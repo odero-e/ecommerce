@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
 import styles from './style';
+import StyleButton from '../StyledButton';
 
 const CarItem = (props) => {
     return (
@@ -17,6 +18,8 @@ const CarItem = (props) => {
           <Text style={styles.subtitle}>Starting at $60,000</Text>
 
         </View>
+
+        <StyleButton/>
 
       </View>
     );
