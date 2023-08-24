@@ -4,8 +4,12 @@ import styles from './style';
 
 
 const StyledButton = (props) => {
+
+    const type = props.type
+    console.warn(type)
+
     return (
-      <View>
+      <View style={styles.container}>
         <Pressable
           style={styles.button}
           onPress={() => {
@@ -14,7 +18,7 @@ const StyledButton = (props) => {
         
         >
 
-        <Text>Custom Order</Text>
+        <Text style={styles.text}>Custom Order</Text>
 
         </Pressable>
           

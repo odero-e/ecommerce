@@ -19,7 +19,7 @@ const CarItem = (props) => {
 
         </View>
 
-        <StyleButton/>
+        <StyleButton type="primary"/>
 
       </View>
     );
