@@ -5,7 +5,7 @@ import StyleButton from '../StyledButton';
 
 const CarItem = (props) => {
     return (
-        <View style={styles.carContainer}>
+      <View style={styles.carContainer}>
 
         <ImageBackground 
           source={require('../../assets/images/ModelX.jpeg')}
@@ -14,24 +14,32 @@ const CarItem = (props) => {
 
         <View style={styles.titles}>
           
-          <Text style={styles.title}>Model S</Text>
-          <Text style={styles.subtitle}>Starting at $60,000</Text>
+          <Text style={styles.title}>NTSA</Text>
+          <Text style={styles.subtitle}>Your Safety Matters</Text>
 
         </View>
 
+      <View style={styles.buttonsContainer}>
+          
         <StyleButton type="primary"
-          content={"Custom Order"}
+          content={"Report an Incident"}
           onPress={() => {
             console.warn("Custom Order was pressed");
           }}
         />
 
         <StyleButton type="secondary"
-          content={"Existing Inventory"}
+          content={"Suggestion Box"}
           onPress={() => {
             console.warn("Existing Inventory was pressed");
         }}
         />
+        
+        
+        </View>           
+
+
+        
 
       </View>
     );
